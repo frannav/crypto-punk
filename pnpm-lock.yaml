@@ -12,6 +12,7 @@ specifiers:
   '@typechain/ethers-v5': ^10.1.0
   '@typechain/hardhat': ^6.1.2
   chai: ^4.2.0
+  dotenv: ^16.0.3
   ethers: ^5.4.7
   hardhat: ^2.13.0
   hardhat-gas-reporter: ^1.0.8
@@ -20,6 +21,7 @@ specifiers:
 
 dependencies:
   '@openzeppelin/contracts': 4.8.2
+  dotenv: 16.0.3
 
 devDependencies:
   '@ethersproject/abi': 5.7.0
@@ -1773,6 +1775,11 @@ packages:
     dependencies:
       path-type: 4.0.0
     dev: true
+
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
+    dev: false
 
   /ecc-jsbn/0.1.2:
     resolution: {integrity: sha512-eh9O+hwRHNbG4BLTjEl3nw044CkGm5X6LoaCf7LPp7UU8Qrt47JYNi6nPX8xjW97TKGKm1ouctg0QSpZe9qrnw==}
