@@ -9,6 +9,8 @@
 // Ethers is in the global scope, so you don't need to require it.
 // const { ethers } = require("ethers");
 
+const MAX_SUPPLY = 100;
+
 async function main() {
   const [deployer] = await ethers.getSigners();
   const { addressAccount } = deployer;
@@ -17,8 +19,8 @@ async function main() {
     `Deploying contracts with the account: ${addressAccount}`
   );
   
-  const CryptoPunks = await ethers.getContractFactory("CryptoPunks");
-  const deployed = await CryptoPunks.deploy();
+  const CryptoPunk = await ethers.getContractFactory("CryptoPunk");
+  const deployed = await CryptoPunk.deploy(MAX_SUPPLY);
   const addressContract = deployed.address;
 
   console.log(`Contract deployed to address: ${addressContract}`);
